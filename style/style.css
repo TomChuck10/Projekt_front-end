@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+}
+
+.main-container {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    background-color: black;
+}
+
+.toppage {
+    margin: 0px 0px 0px 10px;
+    border-radius: 19px 0 0 18px;
+    background-color: red;
+    width: 100%;
+    height: 160px;
+}
+
+.topimg {
+    border-radius: 18px 0 0 0;
+    background-image: url(/img/top-tlo.jpg);
+    height: 100px;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.logo {
+    border-radius: 18px 0 0 0;
+    background-image: url(/img/LogoPolMed.png);
+    justify-content: left;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.8);
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 30px;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    margin: 0 10px;
+    text-align: center;
+    color: black;
+    font-family: cursive;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: red;
+}
