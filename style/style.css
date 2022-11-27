@@ -6,21 +6,19 @@ body {
 
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: #C2D0DE;
 }
 
 .toppage {
     margin: 0px 0px 0px 10px;
     border-radius: 19px 0 0 18px;
-    background-color: red;
 
-    height: 160px;
 }
 
 .topimg {
     border-radius: 18px 0 0 0;
     background-image: url(/img/top-tlo.jpg);
-    height: 100px;
+    height: 150px;
     width: 100%;
     background-size: cover;
 
@@ -30,8 +28,8 @@ body {
     border-radius: 18px 0 0 0;
     background-image: url(/img/LogoPolMed.png);
     justify-content: left;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     background-color: rgba(0, 0, 0, 0.8);
 
@@ -40,68 +38,185 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.navbar ul {
-    display: flex;
-    list-style-type: none;
-    margin-right: 30px;
+    justify-content: space-between;
+    background-color: #002B7B;
+    border-radius: 0 0 0 18px;
 
 }
 
-.navbar ul li a {
+.navbar a {
+
     text-decoration: none;
-    margin: 0 10px;
-    text-align: center;
-    color: black;
+    color: white;
     font-family: cursive;
+    background-color: #002B7B;
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
     font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+
 }
 
-.navbar ul li a:hover {
-    color: red;
+
+
+
+
+.navbar a:hover {
+    color: rgb(110, 110, 110);
+    background-color: #01102d;
 }
 
 .content {
-    height: 100vh;
+    height: 200vh;
 
 }
 
+.textandbtn {
+    margin: 10px 5px 10px 20px;
+    display: grid;
+    margin: 5px;
+    width: 80%;
+
+}
+
+.btnUmowSie {
+    margin: 10px;
+    background-color: #002B7B;
+    border-radius: 7px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 20%;
+    cursor: pointer;
+    padding: 15px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+
+
+}
+
+
+
+.btnUmowSie:hover {
+    background-color: #0456fa;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
 .doc-1 {
-    background-color: green;
-    height: 23%;
+    /*background-color: green; */
+    height: 24%;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.img1 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text1 {
+    margin: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
 }
 
 .doc-2 {
-    background-color: greenyellow;
-    height: 23%;
+    /*background-color: greenyellow; */
+    height: 24%;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.img2 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text2 {
+    margin: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .doc-3 {
-    background-color: blue;
-    height: 23%;
+    /*background-color: blue; */
+    height: 24%;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.img3 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text3 {
+    margin: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
 .doc-4 {
-    background-color: blueviolet;
-    height: 23%;
+    /*background-color: blueviolet;*/
+    height: 24%;
     margin: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.img4 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 150px;
+    height: 200px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text4 {
+    margin: 8px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 
@@ -110,8 +225,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: wheat;
-    height: 100px;
-    width: 100%;
+    background-color: #002B7B;
+    height: 20px;
     margin: 0px;
+    padding: 15px 25px 30px 15px;
+    text-align: center;
+    color: white;
+
 }
