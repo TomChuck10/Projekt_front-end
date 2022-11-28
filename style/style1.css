@@ -66,7 +66,7 @@ body {
 
 
 .navbar a:hover {
-    color: rgb(110, 110, 110);
+    /*color: rgb(110, 110, 110);*/
     background-color: #01102d;
 }
 
@@ -81,13 +81,15 @@ body {
     margin: 5px;
     width: 80%;
 
+
+
 }
 
 .btnUmowSie {
     margin: 10px;
     background-color: #002B7B;
     border-radius: 7px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
     text-align: center;
     width: 20%;
     cursor: pointer;
@@ -96,17 +98,44 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
-
+    position: relative;
+    overflow: hidden;
 
 }
 
+.btnUmowSie span {
+    color: white;
+    font-weight: 800;
+    position: relative;
+    z-index: 1;
+}
+
+.btnUmowSie::before {
+    content: "";
+    position: absolute;
+    background-color: #01102d;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 1.8s, height 1.8s;
+
+}
+
+.btnUmowSie:hover::before {
+    width: 800px;
+    height: 800px;
+}
 
 
+/*
 .btnUmowSie:hover {
     background-color: #0456fa;
     color: rgb(0, 0, 0);
 }
-
+*/
 
 
 
@@ -117,6 +146,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
+
 }
 
 .img1 {
@@ -131,7 +164,7 @@ body {
 }
 
 .text1 {
-    margin: 10px;
+    margin: 8px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
@@ -145,6 +178,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .img2 {
@@ -172,6 +208,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .img3 {
@@ -199,6 +238,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
 }
 
 .img4 {
