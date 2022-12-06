@@ -1,37 +1,34 @@
 body {
     margin: 0;
-}
-
-.main-container {
-
-    height: 100%;
-    width: 100%;
     background-color: #C2D0DE;
 }
 
+
+
 .toppage {
-    margin: 0px 0px 0px 10px;
-    border-radius: 19px 0 0 18px;
+    margin: 30px 0px 0px 30px;
+
 
 }
 
 .topimg {
-    border-radius: 18px 0 0 0;
+    border-radius: 26px 0 0 26px;
     background-image: url(/img/top-tlo.jpg);
-    height: 150px;
+    height: 330px;
     width: 100%;
     background-size: cover;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.8);
 
 }
 
 .logo {
-    border-radius: 18px 0 0 0;
+
     background-image: url(/img/LogoPolMed.png);
     justify-content: left;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     background-size: cover;
-    background-color: rgba(0, 0, 0, 0.8);
+
 
 }
 
@@ -39,8 +36,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #002B7B;
-    border-radius: 0 0 0 18px;
+    background-color: rgba(0, 43, 123, 0.9);
+
 
 }
 
@@ -48,8 +45,8 @@ body {
 
     text-decoration: none;
     color: white;
-    font-family: cursive;
-    background-color: #002B7B;
+    font-family: Arial, Helvetica, sans-serif;
+
     width: 200px;
     text-align: center;
     margin-left: 50px;
@@ -58,6 +55,7 @@ body {
     border-radius: 5px;
     padding: 10px;
     margin: 10px auto 10px auto;
+    font-weight: 600;
 
 }
 
@@ -71,30 +69,29 @@ body {
 }
 
 .content {
-    height: 1400px;
+    height: 2000px;
 
 }
 
 .textandbtn {
-    margin: 10px 5px 10px 20px;
+    margin: 10px 5px 10px 10px;
     display: grid;
-    margin: 5px;
-    width: 80%;
-
-
-
+    width: 75%;
 }
 
 .btnUmowSie {
+
     margin: 10px;
     background-color: #002B7B;
     border-radius: 7px;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
     text-align: center;
+    align-items: center;
+    justify-content: space-between;
     width: 20%;
     cursor: pointer;
-    padding: 15px;
-    font-size: 15px;
+    padding: 20px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     text-decoration: none;
@@ -105,7 +102,7 @@ body {
 
 .btnUmowSie span {
     color: white;
-    font-weight: 800;
+    font-weight: 700;
     position: relative;
     z-index: 1;
 }
@@ -142,20 +139,21 @@ body {
 .doc-1 {
     /*background-color: green; */
     height: 24%;
-    margin: 10px;
+    margin: 10px 120px 10px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px dotted;
+    /*border: 2px dotted;
     border-radius: 8px;
     border-color: rgba(0, 0, 0, 0.5);
+    */
 
 }
 
 .img1 {
     background-image: url(/img/doctor_1.jpg);
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     background-size: cover;
     margin: 25px;
     box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
@@ -164,8 +162,8 @@ body {
 }
 
 .text1 {
-    margin: 8px;
-    font-size: 15px;
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 
@@ -174,19 +172,21 @@ body {
 .doc-2 {
     /*background-color: greenyellow; */
     height: 24%;
-    margin: 10px;
+    margin: 10px 120px 10px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*
     border: 2px dotted;
     border-radius: 8px;
     border-color: rgba(0, 0, 0, 0.5);
+    */
 }
 
 .img2 {
     background-image: url(/img/doctor_1.jpg);
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     background-size: cover;
     margin: 25px;
     box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
@@ -195,8 +195,8 @@ body {
 }
 
 .text2 {
-    margin: 8px;
-    font-size: 15px;
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
@@ -204,19 +204,21 @@ body {
 .doc-3 {
     /*background-color: blue; */
     height: 24%;
-    margin: 10px;
+    margin: 10px 120px 10px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*
     border: 2px dotted;
     border-radius: 8px;
     border-color: rgba(0, 0, 0, 0.5);
+    */
 }
 
 .img3 {
     background-image: url(/img/doctor_1.jpg);
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     background-size: cover;
     margin: 25px;
     box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
@@ -225,8 +227,8 @@ body {
 }
 
 .text3 {
-    margin: 8px;
-    font-size: 15px;
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
@@ -234,19 +236,21 @@ body {
 .doc-4 {
     /*background-color: blueviolet;*/
     height: 24%;
-    margin: 10px;
+    margin: 10px 120px 10px 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    /*
     border: 2px dotted;
     border-radius: 8px;
     border-color: rgba(0, 0, 0, 0.5);
+    */
 }
 
 .img4 {
     background-image: url(/img/doctor_1.jpg);
-    width: 150px;
-    height: 200px;
+    width: 250px;
+    height: 350px;
     background-size: cover;
     margin: 25px;
     box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
@@ -255,8 +259,8 @@ body {
 }
 
 .text4 {
-    margin: 8px;
-    font-size: 15px;
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
 }
@@ -289,7 +293,11 @@ body {
     }
 
     .content {
-        height: 2500px;
+        height: 3000px;
+    }
+
+    .textandbtn {
+        width: 97%;
     }
 
     .doc-1 {
@@ -306,5 +314,35 @@ body {
 
     .doc-4 {
         display: grid;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        height: 2800px;
+    }
+
+    .img1 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img3 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img4 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .textandbtn {
+        width: 90%;
     }
 }
