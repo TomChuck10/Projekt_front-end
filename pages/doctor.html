@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="/style/docStyle.css">
     <script src="https://kit.fontawesome.com/e870390591.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-     <nav class="navbar">
+    <nav class="navbar">
         <ul>
             <li class="logo2"><img src="/img/LogoPolMed.png" alt="Logo POLmed"></li>
             <li class="toggle"><i class="fas fa-bars"></i></li>
@@ -20,16 +22,77 @@
             <li class="item"><a href="#">O nas</a></li>
             <li class="item"><a href="#">Zaloguj się</a></li>
         </ul>
-     </nav>
-     <main>
-        <section class="doctor">
-            <div class="foto"><img src="/img/mrs_doctor.jpg" alt="photo_of_doctor"></div>
-            <div class="term"></div>
-        </section>
-     </main>
-     
+    </nav>
 
+    <main>
+        <div class="picture">
+            <img src="/img/mrs_doctor2.jpg" alt="photo_of_doctor">
+            <h1 class="title">Dr. Barbara Szcześniak</h1>
+            <h2 class="type">pediatra</h2>
+            <hr>
+        </div>
 
-     <script src="/scripts/burger.js"></script>
+        </div>
+        <div class="term">
+            <label for="visit">Wybierz rodzaj i termin wizyty:</label>
+            <select name="visit" id="visit">
+                <option value="">--Proszę wybrać z listy--</option>
+                <option value="kontrolna">Wizyta kontrolna - 150zł</option>
+                <option value="konsultacja">Konsultacja - 100zł</option>
+                <option value="choroba">Choroba - 150zł</option>
+                <option value="recepta">Wypisanie recepty - 100zł</option>
+                <option value="szczepienie">Szczepienie - 200zł</option>
+            </select>
+            <div class="calendar">
+                <div id="container">
+                    <div id="header">
+                        <div id="monthDisplay"></div>
+                        <div>
+                            <button id="backButton">Poprzedni</button>
+                            <button id="nextButton">Następny</button>
+                        </div>
+                    </div>
+
+                    <div id="weekdays">
+                        <div>Sunday</div>
+                        <div>Monday</div>
+                        <div>Tuesday</div>
+                        <div>Wednesday</div>
+                        <div>Thursday</div>
+                        <div>Friday</div>
+                        <div>Saturday</div>
+                    </div>
+
+                    <div id="calendar"></div>
+                </div>
+
+                <div id="newEventModal">
+                    <h2>Nowa wizyta</h2>
+
+                    <input id="eventTitleInput" placeholder="" />
+
+                    <button id="saveButton">Zapisz</button>
+                    <button id="cancelButton">Anuluj</button>
+                </div>
+
+                <div id="deleteEventModal">
+                    <h2>Event</h2>
+
+                    <p id="eventText"></p>
+
+                    <button id="deleteButton">Delete</button>
+                    <button id="closeButton">Close</button>
+                </div>
+
+                <div id="modalBackDrop"></div>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+        PolmedCompany spółka z o.o © wszelkie prawa zastrzeżone.
+        Krakowska 27/3 Kraków 12 86 12 897 Polska
+    </footer>
+    <script src="/scripts/burger.js"></script>
 </body>
 </html>
