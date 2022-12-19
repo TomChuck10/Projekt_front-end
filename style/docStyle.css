@@ -16,6 +16,14 @@ body{
     background-color: #133C85;
     font-size: 1.5em;
 }
+.polmed{
+  color: #C2D0DE;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 2.5rem;
+}
 .navbar li{
     list-style-type: none;
     padding: 0 20px 0;
@@ -30,6 +38,8 @@ body{
 .logo2{
     flex: 1;
     user-select: none;
+    padding: 0;
+    margin: 0;
 }
 .logo2 img{
     width: 80px;
@@ -74,7 +84,7 @@ body{
 }
 
 
-/*////////////////////// main /////////////////////////*/
+/*////////////////////// main i footer /////////////////////////*/
 
 main{
     margin-top: 2rem;
@@ -91,6 +101,7 @@ margin-top: 4rem;
  height: 488px;
  border-radius: 20px;
  display: flex;
+ box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
 }
 .picture{
     text-align: center;
@@ -107,12 +118,13 @@ h1{
 
 }
 .title{
-    color: #2D3142;
+    color: #133C85;
 }
 .type{
     text-transform: uppercase;
-    color: green;
+    color: teal;
     font-size: 2rem;
+    margin-bottom: 1rem;
 }
 hr{
     border-top: 2px solid #133C85;
@@ -122,6 +134,8 @@ label{
     justify-items: center;
     text-align: center;
     margin-bottom: 1rem;
+    color: #133C85;
+    text-transform: uppercase;
 }
 select{
     width: 15rem;
@@ -142,6 +156,7 @@ footer{
     margin: 0px;
     padding: 2rem 0 2rem 0;
     text-align: center;
+    color: #CBD4C2;
 }
 /*////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .container {
@@ -163,7 +178,8 @@ button {
 
 #header {
   padding: 10px;
-  color: #d36c6c;
+  color: #133C85;
+  text-transform: uppercase;
   font-size: 26px;
   font-family: sans-serif;
   display: flex;
@@ -194,18 +210,19 @@ button {
 .day {
   width: 100px;
   padding: 10px;
-  height: 100px;
+  height: 80px;
   cursor: pointer;
   box-sizing: border-box;
-  background-color: #d36c6c;
+  background-color: #92a1d1;
   margin: 5px;
   box-shadow: 0px 0px 3px #CBD4C2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 30px;
 }
 .day:hover {
-  background-color: plum;
+  background-color: #133C85;
 }
 
 .day + #currentDay {
@@ -225,6 +242,7 @@ button {
   background-color: #FFFCFF !important;
   box-shadow: none !important;
   background-color: #C2D0DE !important;
+  border: none !important;
 }
 #newEventModal, #deleteEventModal {
   display: none;
