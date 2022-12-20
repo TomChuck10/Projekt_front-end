@@ -1,0 +1,387 @@
+body {
+    margin: 0;
+    background-color: #C2D0DE;
+}
+
+
+
+.toppage {
+    margin: 30px 0px 0px 30px;
+
+
+}
+
+.topimg {
+    border-radius: 26px 0 0 26px;
+    background-image: url(/img/top-tlo.jpg);
+    height: 330px;
+    width: 100%;
+    background-size: cover;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.8);
+
+}
+
+.logo {
+
+    background-image: url(/img/LogoPolMed.png);
+    justify-content: left;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+
+
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(0, 43, 123, 0.9);
+
+
+}
+
+.navbar a {
+
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+
+    width: 200px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 18px;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto 10px auto;
+    font-weight: 600;
+
+}
+
+
+
+
+
+.navbar a:hover {
+    /*color: rgb(110, 110, 110);*/
+    background-color: #01102d;
+}
+
+.content {
+    height: 2000px;
+
+}
+
+.textandbtn {
+    margin: 10px 5px 10px 10px;
+    display: grid;
+    width: 75%;
+}
+
+.liandbtn {
+    display: grid;
+
+}
+
+.btnUmowSie {
+
+    margin: 10px;
+    background-color: #002B7B;
+    border-radius: 7px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+    width: 21%;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    padding: 5px;
+
+}
+
+.btnUmowSie span {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.btnUmowSie span img {
+    padding: 20px;
+}
+
+.btnUmowSie span p {
+    padding: 10px;
+
+}
+
+.btnUmowSie::before {
+    content: "";
+    position: absolute;
+    background-color: #01102d;
+    width: 0;
+    height: 0;
+    left: var(--xPos);
+    top: var(--yPos);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    transition: width 1.8s, height 1.8s;
+
+}
+
+.btnUmowSie:hover::before {
+    width: 800px;
+    height: 800px;
+}
+
+
+/*
+.btnUmowSie:hover {
+    background-color: #0456fa;
+    color: rgb(0, 0, 0);
+}
+*/
+
+
+
+.doc-1 {
+    /*background-color: green; */
+    height: 24%;
+    margin: 10px 120px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
+    */
+
+}
+
+.img1 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text1 {
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+
+.text1 p {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.doc-2 {
+    /*background-color: greenyellow; */
+    height: 24%;
+    margin: 10px 120px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
+    */
+}
+
+.img2 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text2 {
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.text2 p {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.doc-3 {
+    /*background-color: blue; */
+    height: 24%;
+    margin: 10px 120px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
+    */
+}
+
+.img3 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text3 {
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.text3 p {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+.doc-4 {
+    /*background-color: blueviolet;*/
+    height: 24%;
+    margin: 10px 120px 10px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*
+    border: 2px dotted;
+    border-radius: 8px;
+    border-color: rgba(0, 0, 0, 0.5);
+    */
+}
+
+.img4 {
+    background-image: url(/img/doctor_1.jpg);
+    width: 250px;
+    height: 350px;
+    background-size: cover;
+    margin: 25px;
+    box-shadow: -18px -18px 4px 2px rgba(8, 209, 193, 0.7);
+
+
+}
+
+.text4 {
+    margin: 8px 25px 8px 8px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.text4 p {
+    font-size: 33px;
+    font-weight: 700;
+}
+
+
+.footer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #002B7B;
+    height: 20px;
+    margin: 0px;
+    padding: 15px 25px 30px 15px;
+    text-align: center;
+    color: white;
+
+}
+
+@media screen and (max-width: 612px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        width: 80px;
+        margin-left: 0px;
+        margin-right: 0px;
+        font-size: 14px;
+    }
+
+    .content {
+        height: 3000px;
+    }
+
+    .textandbtn {
+        width: 100%;
+    }
+
+    .doc-1 {
+        display: grid;
+    }
+
+    .doc-2 {
+        display: grid;
+    }
+
+    .doc-3 {
+        display: grid;
+    }
+
+    .doc-4 {
+        display: grid;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .content {
+        height: 2800px;
+    }
+
+    .liandbtn {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .img1 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img2 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img3 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .img4 {
+        width: 200px;
+        height: 300px;
+    }
+
+    .textandbtn {
+        width: 100%;
+    }
+}
