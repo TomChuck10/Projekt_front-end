@@ -3,10 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 body{
     background-color: #C2D0DE;
+    /* font-family: 'Mukta', sans-serif; */
 }
 
 .navbar ul{
@@ -54,10 +54,10 @@ body{
     color: #C2D0DE;
 }
 .toggle:hover{
-    color: #2D3142;
+    color: rgba(8, 209, 193, 0.7);
 }
 .item:hover a{
-    color: #2D3142;
+    color: rgba(8, 209, 193, 0.7);
 }
 
 
@@ -146,6 +146,7 @@ select{
     border-radius: 5px;
     padding: 0.4rem;
     margin-top: 0.5rem;
+    font-size: 1rem;
 }
 footer{
     display: flex;
@@ -186,7 +187,14 @@ button {
   justify-content: space-between;
 }
 #header button {
-  background-color:#92a1d1;
+  font-size: 1.25rem;
+  height: 2rem;
+  width: 8rem;
+  text-align: center;
+  background-color:#133C85;
+}
+#header button:hover{
+  background-color: #92a1d1;
 }
 #container {
   width: 770px;
@@ -220,12 +228,16 @@ button {
   flex-direction: column;
   justify-content: space-between;
   border-radius: 30px;
+  font-family: 'Mukta', sans-serif;
 }
 .day:hover {
   background-color: #133C85;
 }
 
 .day + #currentDay {
+  background-color:rgba(8, 209, 193, 0.7);
+}
+.day + #currentDay:hover {
   background-color:teal;
 }
 .event {
@@ -289,8 +301,35 @@ button {
   position: absolute;
   background-color: rgba(0,0,0,0.8);
 }
+.button{
+  display: flex;
+  justify-content: flex-end;
+}
+.button1{
+  width: 12rem;
+  padding: 0.75rem;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  font-size: 1.75rem;
+  background-color: #133C85;
+  color: #C2D0DE;
+}
+.button1:hover{
+  background-color: #92a1d1;
+}
 
 
+@media (max-width: 1326px){
+  .polmed{
+    font-size: 2rem;
+  }
+  .logo2 img{
+    width: 60px;
+}
+  .navbar ul{
+    font-size: 1.15rem;
+}
+}
 
 @media (max-width: 1176px){
     .navbar ul{
@@ -322,5 +361,16 @@ button {
     }
     label{
         margin-top: 1rem;
+        font-size: 1.25rem;
+    }
+    .polmed{
+      font-size: 1.75rem;
+    }
+    .logo2 img{
+      width: 50px;
+  }
+  .picture img{
+    margin-top: 0.5rem;
+     box-shadow: none;
     }
 }
