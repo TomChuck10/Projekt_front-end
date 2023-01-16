@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>POLmed</title>
     <link rel="stylesheet" href="/style/docStyle.css">
+    <link rel="stylesheet" href="/style/dycalendar.css">
     <script src="https://kit.fontawesome.com/e870390591.js" crossorigin="anonymous"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,7 +49,12 @@
                 <option value="szczepienie">Szczepienie - 200zł</option>
             </select>
             <hr>
-            <div class="calendar">
+            <div class="container">
+                <div id="dycalendar">
+                </div>
+            </div>
+            
+            <!-- <div class="calendar">
                 <div id="container">
                     <div id="header">
                         <div id="monthDisplay"></div>
@@ -91,7 +97,7 @@
 
                 <div id="modalBackDrop"></div>
 
-            </div>
+            </div> -->
             <div class="button"><a href="index3.html"><button class="button1">Przejdź dalej</button></a></div>
         </div>
     </main>
@@ -100,6 +106,17 @@
         Krakowska 27/3 Kraków 12 86 12 897 Polska
     </footer>
     <script src="/scripts/burger.js"></script>
-    <script src="/scripts/calendar.js"></script>
+    <!-- <script src="/scripts/calendar.js"></script> -->
+    <script src="/scripts/dycalendar.js"></script>
+    <script>
+        dycalendar.draw({
+            target: '#dycalendar',
+            type: 'month',
+            dayformat: 'full',
+            monthformat: 'full',
+            highlighttargetdate: true,
+            prevnextbutton: 'show'
+        })
+    </script>
 </body>
 </html>

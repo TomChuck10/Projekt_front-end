@@ -309,7 +309,7 @@ button {
   width: 12rem;
   padding: 0.75rem;
   margin-right: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.25rem;
   font-size: 1.75rem;
   background-color: #133C85;
   color: #C2D0DE;
@@ -318,6 +318,93 @@ button {
   background-color: #92a1d1;
 }
 
+
+
+
+-----------------------------------------------------------------------------------------
+
+:root {
+    --dark-body: #4d4c5a;
+    --dark-main: #141529;
+    --dark-second: #79788c;
+    --dark-hover: #323048;
+    --dark-text: #f8fbff;
+
+    --light-body: #f3f8fe;
+    --light-main: #fdfdfd;
+    --light-second: #c3c2c8;
+    --light-hover: #edf0f5;
+    --light-text: #151426;
+
+    --blue: #0000ff;
+    --white: #fff;
+
+    --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    --font-family: cursive;
+}
+
+.dark {
+    --bg-body: var(--dark-body);
+    --bg-main: var(--dark-main);
+    --bg-second: var(--dark-second);
+    --color-hover: var(--dark-hover);
+    --color-txt: var(--dark-text);
+}
+
+.light {
+    --bg-body: var(--light-body);
+    --bg-main: var(--light-main);
+    --bg-second: var(--light-second);
+    --color-hover: var(--light-hover);
+    --color-txt: var(--light-text);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+  position: relative;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(8, 209, 193, 0.7);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container #dycalendar{
+  width: 100%;
+  padding: 20px;
+}
+
+#dycalendar table{
+  width: 100%;
+  margin-top: 40px;
+}
+
+#dycalendar table td{
+  font-weight: 700;
+  color: #444;
+  padding: 10px;
+}
+
+#dycalendar .dycalendar-header{
+  font-weight: 1000;
+  color: #444;
+}
+
+#dycalendar .dycalendar-target-date{
+  color: #f8f8f8;
+  background-color: #444;
+}
 
 @media (max-width: 1326px){
   .polmed{
@@ -352,7 +439,7 @@ button {
     }
 }
 
-@media (max-width: 768px){
+@media (max-width: 1050px){
     main{
         margin-top: rem;
         display: flex;
@@ -372,5 +459,12 @@ button {
   .picture img{
     margin-top: 0.5rem;
      box-shadow: none;
+    }
+    .container{
+      width: 370px;
+    }
+    .button1{
+      margin-top: 0rem;
+      margin-right: 5.5rem;
     }
 }
