@@ -71,6 +71,7 @@
 .dycalendar-month-container div{
     padding : 0;
     margin-bottom : 10px;
+    text-decoration: none;
 }
 
 .dycalendar-month-container .dycalendar-header {

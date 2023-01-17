@@ -1,3 +1,9 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 html,
 body {
     height: 100%;
@@ -23,7 +29,7 @@ ul{
 
 .navbar ul{
     display: flex;
-    width: 98%;
+    width: 100%;
     align-items: center;
     background-color: #133C85;
     font-size: 1.5em;
@@ -114,6 +120,7 @@ a {
     font-size: 2rem;
     text-transform: uppercase;
     color: #133C85;
+    text-align: center;
 }
 
 .booking-details h3 {
@@ -166,7 +173,7 @@ div.seatCharts-seat.unavailable {
 }
 
 div.seatCharts-container {
-    border-right: 1px dotted #adadad;
+    /* border-right: 2px solid #85FFBD; */
     padding: 20px;
 }
 
@@ -206,7 +213,7 @@ span.seatCharts-legendDescription {
 }
 
 ul#selected-seats:empty:after {
-    content: "Please select Seat/s first";
+    content: "Proszę wybrać termin";
     color: #6c6c6c;
     font-style: italic;
 }
@@ -247,7 +254,7 @@ ul#selected-seats>li {
 
 .grid-50 {
     flex: 0 0 auto;
-    width: 50%; 
+    width: 50%;
 }
 
 div.seatCharts-space {
@@ -273,7 +280,7 @@ li.seatCharts-legendItem {
     color: #fff;
     border-radius: 10px;
     display: block;
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%);
     border: none;
     cursor: pointer;
 }
@@ -312,7 +319,7 @@ li.seatCharts-legendItem {
     color: #fff;
     border-radius: 10px;
     display: block;
-    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%);
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%);
     border: none;
     cursor: pointer;
 }
@@ -324,6 +331,34 @@ li.seatCharts-legendItem {
     text-decoration: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+.hr1{
+    border: 1px solid #133C85;
+}
+#terminy{
+    width: 10rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 0.15rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#jeden{
+    background-color: #0093E9;
+    margin-bottom: 0.5rem;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#dwa{
+    background-color: red;
+    padding: 10px;
+    border-radius: 10px;
+}
 
 footer{
     display: flex;
@@ -336,14 +371,6 @@ footer{
     text-align: center;
     color: #CBD4C2;
 }
-
-
-
-a{
-    text-decoration: none;
-}
-
-
 
 @media (max-width: 1176px){
     .navbar ul{
@@ -366,7 +393,7 @@ a{
     }
 }
 
-@media (max-width: 1326px){
+@media (max-width: 1364px){
     .polmed{
       font-size: 2rem;
     }
@@ -402,8 +429,9 @@ a{
     .grid-50 {
     width: 100%;
     display: flex;
-    justify-content: center;   
+    justify-content: center;  
     }
+    
   }
   
   @media (max-width: 1050px){
@@ -423,6 +451,5 @@ a{
       .logo2 img{
         width: 50px;
     }
-
   }
   
