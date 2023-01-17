@@ -96,6 +96,7 @@
         }
         table.appendChild(tr);
 
+
         //create remaining rows
         for (r = 3; r <= 7; r = r + 1) {
             tr = document.createElement("tr");
