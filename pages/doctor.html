@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POLmed</title>
+    <link rel="stylesheet" href="/style/docStyle.css">
+    <script src="https://kit.fontawesome.com/e870390591.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li class="logo2">
+                <div class="polmed">POLmed<img src="/img/LogoVersion2.png" alt="Logo POLmed"></div>
+            </li>
+            <li class="toggle"><i class="fas fa-bars"></i></li>
+            <li class="item"><a href="index.html">Strona Główna</a></li>
+            <li class="item"><a href="#">Usługi</a></li>
+            <li class="item"><a href="#">Cennik</a></li>
+            <li class="item"><a href="#">Nasi Specjaliści</a></li>
+            <li class="item"><a href="#">O nas</a></li>
+            <li class="item"><a href="#">Zaloguj się</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="picture">
+            <img src="/img/mrs_doctor2.jpg" alt="photo_of_doctor">
+            <h1 class="title">Dr. Barbara Szcześniak</h1>
+            <h2 class="type">pediatra</h2>
+            <hr>
+        </div>
+
+        </div>
+        <div class="term">
+            <label for="visit">Wybierz rodzaj i termin wizyty</label>
+            <select name="visit" id="visit">
+                <option value="">--Proszę wybrać z listy--</option>
+                <option value="kontrolna">Wizyta kontrolna - 150zł</option>
+                <option value="konsultacja">Konsultacja - 100zł</option>
+                <option value="choroba">Choroba - 150zł</option>
+                <option value="recepta">Wypisanie recepty - 100zł</option>
+                <option value="szczepienie">Szczepienie - 200zł</option>
+            </select>
+            <hr>
+            <div class="calendar">
+                <div id="container">
+                    <div id="header">
+                        <div id="monthDisplay"></div>
+                        <div>
+                            <button id="backButton">Poprzedni</button>
+                            <button id="nextButton">Następny</button>
+                        </div>
+                    </div>
+
+                    <div id="weekdays">
+                        <div>Ndz</div>
+                        <div>Pon</div>
+                        <div>Wtr</div>
+                        <div>Śrd</div>
+                        <div>Czw</div>
+                        <div>Ptk</div>
+                        <div>Sob</div>
+                    </div>
+
+                    <div id="calendar"></div>
+                </div>
+
+                <div id="newEventModal">
+                    <h2>Nowa wizyta</h2>
+
+                    <input id="eventTitleInput" placeholder="" />
+
+                    <button id="saveButton">Zapisz</button>
+                    <button id="cancelButton">Anuluj</button>
+                </div>
+
+                <div id="deleteEventModal">
+                    <h2>Wizyta</h2>
+
+                    <p id="eventText"></p>
+
+                    <button id="deleteButton">Usuń</button>
+                    <button id="closeButton">Zamknji</button>
+                </div>
+
+                <div id="modalBackDrop"></div>
+
+            </div>
+            <div class="button"><a href="index3.html"><button class="button1">Przejdź dalej</button></a></div>
+        </div>
+    </main>
+    <footer>
+        PolmedCompany spółka z o.o © wszelkie prawa zastrzeżone.
+        Krakowska 27/3 Kraków 12 86 12 897 Polska
+    </footer>
+    <script src="/scripts/burger.js"></script>
+    <script src="/scripts/calendar.js"></script>
+</body>
+
+</html>
