@@ -13,9 +13,9 @@
 <body>
     <nav class="navbar">
         <ul>
-            <li class="logo2"><div class="polmed">POLmed<img src="/img/LogoVersion2.png" alt="Logo POLmed"></div></li>
+            <li class="logo2"><div class="polmed">POLmed<img src="../img/LogoVersion2.png" alt="Logo POLmed"></div></li>
             <li class="toggle"><i class="fas fa-bars"></i></li>
-            <li class="item"><a href="#">Strona Główna</a></li>
+            <li class="item"><a href="index1.html">Strona Główna</a></li>
             <li class="item"><a href="#">Cennik</a></li>
             <li class="item"><a href="#">Kontakt</a></li>
             <li class="item"><a href="#">Zaloguj się</a></li>
@@ -23,45 +23,50 @@
     </nav>
 
     <div class="header">
-    <h1>Dziękujemy za dokonanie rejestracji</h1>
-
-    </div>
-
-    <main>
-        <div class="picture">
-            
-            <img src="../img/mrs_doctor2.jpg" alt="photo_of_doctor">
-            
-            
-        </div>
-
-        
-        <div class="term">
-           <br> <center><h3>Szczegóły wizyty</h3></center><br>
-            <h5>lekarz:     Barbara Szcześniak</h5>
-            <h5>powód wizyty: choroba</h5>
-            <h5>data wizyty: 22.12.2022</h5>
-            <h5>godzina wizyty: 13:00-13:30</h5>
-            <h5>gabinet: A21</h5><br><br>
-            <div class="anuluj">
-                <div>
-                
-            <button id="powrot" style="background-color: #133C85; color: white;">Strona główna</button>
-        </div>
-        <div>
-            <button id="anuluj" style="background-color: #868fa3; color: white;">Anuluj wizytę</button>
-        </div>
-        </div>
+        <h1>Dziękujemy za dokonanie rejestracji</h1>
+    
         </div>
     
-    </main>
+        <main>
+            
+    
+            <div class="main_hr">
+                <br> <center><h2>Szczegóły wizyty</h2></center><br>
+            </div>
+    
+            <div class="picture">
+                <img src="../img/doctor_1.jpg">
+            </div>
+            <div class="card">
+               
+                <h4><span>lekarz:</span>     <span>Barbara Szczesniak</span></h4>
+                <hr>
+                <h4><span>powód wizyty:</span> <span>choroba</span></h4>
+                <hr>
+                <h4><span>data wizyty:</span> <span>20.01.2023</span></h4>
+                <hr>
+                <h4><span> wizyty:</span> <span>13:00-14:00</span></h4>
+                <hr>
+                <h4><span>gabinet:</span> <span>175B</span></h4><br><br>
+                
+                    
+            </div>
+            <div class="buttons">
+                 
+                <button  onclick="window.location.href = 'index1.html';" id="powrot" style="background-color: #133C85; color: white;"> Strona główna </button>
+                <button onclick="alert('Twoja wizyta została anulowana')" id="anuluj" style="background-color: #868fa3; color: white;">Anuluj wizytę</button>
+            <div>
+                
+            
+            
+        
+        </main>
     <footer>
         <div id="stopka1">PolmedCompany spółka z o.o © wszelkie prawa zastrzeżone.
             Krakowska 27/3 Kraków 12 86 12 897 Polska</div>
             <div id="link">
                 <div class="odnosnik1"><a href="https://www.nfz.gov.pl/" target="_blank">Strona organizacji NFZ</a></div>
                 <div class="odnosnik2"><a href="https://www.facebook.com/" target="_blank">Social Media</a></div>
-            </div>
     </footer>
     <script src="../scripts/burger.js"></script>
 </body>
