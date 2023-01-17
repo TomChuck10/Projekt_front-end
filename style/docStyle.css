@@ -152,6 +152,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column; 
     background-color: #133C85;
     height: auto;
     margin: 0px;
@@ -159,6 +160,28 @@ footer{
     text-align: center;
     color: #CBD4C2;
 }
+
+#stopka1{
+  margin-bottom: 1rem;
+}
+
+#link{
+  display: flex;
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+#link a{
+  color: rgba(8, 209, 193, 0.7);
+}
+.odnosnik1 {
+  margin-right: 1rem;
+}
+.odnosnik2 a{
+  margin-left: 1rem;
+}
+
+
 /*////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .container {
   display: flex;
@@ -369,7 +392,7 @@ button {
 .container{
   position: relative;
   margin: auto;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   width: 400px;
   height: 400px;
@@ -409,6 +432,16 @@ a{
   color: #f8f8f8;
   background-color: #444;
 }
+
+.pay{
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+
+
 
 @media (max-width: 1326px){
   .polmed{

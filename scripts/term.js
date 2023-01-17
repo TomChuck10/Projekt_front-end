@@ -1,4 +1,4 @@
-var firstSeatLabel = 9;
+var firstSeatLabel = 10;
 var booked = !!localStorage.getItem('booked') ? $.parseJSON(localStorage.getItem('booked')) : [];
 $(document).ready(function() {
     var $cart = $('#selected-seats'),
@@ -6,15 +6,9 @@ $(document).ready(function() {
         $total = $('#total'),
         sc = $('#bus-seat-map').seatCharts({
             map: [
-                'e',
-                'e',
-                'e',
-                'e',
-                'e',
-                'e',
-                'e',
-                'e',
-
+                'eee',
+                'eee',
+                'eee',
             ],
             seats: {
                 e: {
