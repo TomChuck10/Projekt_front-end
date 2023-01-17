@@ -1,6 +1,6 @@
 var firstSeatLabel = 9;
 var booked = !!localStorage.getItem('booked') ? $.parseJSON(localStorage.getItem('booked')) : [];
-$(document).ready(function() {
+$(document).ready(function () {
     var $cart = $('#selected-seats'),
         $counter = $('#counter'),
         $total = $('#total'),
@@ -18,7 +18,7 @@ $(document).ready(function() {
             ],
             seats: {
                 e: {
-                    
+
                     classes: 'economy-class', //your custom CSS class
                     category: 'Godzina'
                 }
@@ -26,7 +26,7 @@ $(document).ready(function() {
             },
             naming: {
                 top: false,
-                getLabel: function(character, row, column) {
+                getLabel: function (character, row, column) {
                     return firstSeatLabel++;
                 },
             },
@@ -38,7 +38,7 @@ $(document).ready(function() {
                     ['f', 'unavailable', 'Zarezerwowany termin']
                 ]
             },
-            click: function() {
+            click: function () {
                 if (this.status() == 'available') {
                     //let's create a new <li> which we'll add to the cart items
                     $('<li>' + this.data().category + '  ' + this.settings.label + ': <a href="#" class="cancel-cart-item">[anuluj]</a></li>')
@@ -81,7 +81,7 @@ $(document).ready(function() {
         });
 
     //this will handle "[cancel]" link clicks
-    $('#selected-seats').on('click', '.cancel-cart-item', function() {
+    $('#selected-seats').on('click', '.cancel-cart-item', function () {
         //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
         sc.get($(this).parents('li:first').data('seatId')).click();
     });
@@ -96,7 +96,7 @@ function recalculateTotal(sc) {
     var total = 0;
 
     //basically find every selected seat and sum its price
-    sc.find('selected').each(function() {
+    sc.find('selected').each(function () {
 
         total += this.data().price;
 
@@ -105,15 +105,15 @@ function recalculateTotal(sc) {
     return total;
 }
 
-$(function() {
-    $('#checkout-button').click(function() {
+$(function () {
+    $('#checkout-button').click(function () {
         var items = $('#selected-seats li')
         if (items.length <= 0) {
             alert("Proszę wybrać termin")
             return false;
         }
         var selected = [];
-        items.each(function(e) {
+        items.each(function (e) {
             var id = $(this).attr('id')
             id = id.replace("cart-item-", "")
             selected.push(id)
@@ -127,7 +127,7 @@ $(function() {
         alert("Termin został zarezerwowany")
         location.reload()
     })
-    $('#reset-btn').click(function() {
+    $('#reset-btn').click(function () {
         if (confirm("Czy jesteś pewny że chcesz anulować rezerwację?") === true) {
             localStorage.removeItem('booked')
             alert("Rezerwacja została anulowana pomyślnie")
